@@ -27,4 +27,8 @@ class Owner
   def self.all
     return @@all
   end
+  
+  def cats
+    return Cat.all.select { |cat| cat.owner == self }
+  end
 end
