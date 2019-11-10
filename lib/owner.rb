@@ -15,6 +15,10 @@ class Owner
     return "I am a #{@species}."
   end
   
+  def self.count
+    return @@count
+  end
+  
   def self.reset_all
     @@all.clear
     @@count = 0
